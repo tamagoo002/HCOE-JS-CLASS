@@ -159,9 +159,9 @@
 // const username=""
 
 // const username = "enter your username";
-// console.log(username);
+// console.log(string(username));
 // const password = "enter your password";
-// console.log(password);
+// console.log(String(password));
 
 // if (username === password) {
 //   alert("Welcome admin!!", username);
@@ -170,3 +170,25 @@
 // }
 // ///
 // username === "ana" && password === "ana" ? "admin!" : "invalid";
+
+//mux of 13 using while loop
+// let multiplier = 1;
+// const number = 13;
+
+// while (multiplier <= 10) {  // Multiplication table up to 10
+//     const result = number * multiplier;
+//     console.log(`${number} * ${multiplier} = ${result}`);
+//     multiplier++;
+
+let n = 1;
+const m = 13;
+
+while (n <= 10) {
+  const result = n * m;
+  console.log(`${n}*${m}=${result}`);
+  n++;
+}
+// // const string4 =new String(""A string object)
+// const fname=""
+// const lname=""
+// //o/p ""full name //proper case ma dekhaune
