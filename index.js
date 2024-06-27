@@ -180,15 +180,36 @@
 //     console.log(`${number} * ${multiplier} = ${result}`);
 //     multiplier++;
 
-let n = 1;
-const m = 13;
+// let n = 1;
+// const m = 13;
 
-while (n <= 10) {
-  const result = n * m;
-  console.log(`${n}*${m}=${result}`);
-  n++;
-}
+// while (n <= 10) {
+//   const result = n * m;
+//   console.log(`${n}*${m}=${result}`);
+//   n++;
+// }
 // // const string4 =new String(""A string object)
 // const fname=""
 // const lname=""
 // //o/p ""full name //proper case ma dekhaune
+//wap that add number formatt
+//10000=>10,000
+
+const fname = "Anamika";
+const lname = "Rai";
+
+const fullName =
+  fname.charAt(0).toUpperCase() +
+  fname.slice(1).toLowerCase() +
+  " " +
+  lname.charAt(0).toUpperCase() +
+  lname.slice(1).toLowerCase();
+
+console.log(fullName);
+
+// const fname = 'Anamika';
+// const lname = 'Rai';
+
+// const fullName = fname.slice(0, 1).toUpperCase() + fname.slice(1).toLowerCase() + ' ' + lname.slice(0, 1).toUpperCase() + lname.slice(1).toLowerCase();
+
+// console.log(fullName);
