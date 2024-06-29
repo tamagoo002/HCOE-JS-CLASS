@@ -334,21 +334,29 @@ const laptop = {
   model: "Acer",
   name: "Nitro 5", //key:value
   isworkking: true,
-  modelyear: 2020,
+  modelYear: 2020,
   specs: {
     ram: 16,
     sdd: "1TB",
   },
   age: () => {
-    return 2024 - modelyear;
+    return 2024 - laptop.modelYear;
   },
-  fullName: function () {
-    return model + name;
+  fullName: () => {
+    console.log(this);
+    return this.model + laptop.name;
   },
 }; //object  curly bracket thapesi es6
 //read
 const laptopmodel = laptop.model;
+const laptopage = laptop.age();
+const laptopnamee = laptop.fullName();
 
-console.log(laptopmodel);
+console.log(laptopmodel, laptopage, laptopnamee);
 
 //objet creation type es5?
+//updat e
+laptop.model = "Ball";
+console.log(model);
+//delete use nagarni
+//destructure
