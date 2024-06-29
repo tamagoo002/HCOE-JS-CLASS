@@ -360,3 +360,5 @@ laptop.model = "Ball";
 console.log(model);
 //delete use nagarni
 //destructure
+const { model, fullname, ...rest } = laptop;
+console.log(rest);
