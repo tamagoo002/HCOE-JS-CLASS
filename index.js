@@ -378,43 +378,47 @@
 // const { model, fullname, ...rest } = laptop;
 // console.log(rest);
 
-const item = {
-  name: "headphones",
-  price: 77.84,
-  discount: "7%",
-};
+// const item = {
+//   name: "headphones",
+//   price: 77.84,
+//   discount: "7%",
+// };
 
-const price = item.price;
+// const price = item.price;
 
-if (price > 100) {
-  item.price *= 1 - 0.1;
-} else {
-  item.price *= 1 - 0.07;
-}
-
-console.log(item.price);
-//update the obj with new property -discount 7 or 10 % and new price
-// function updateItem(item) {
-//   const newPrice = calculateNewPrice(item.price);
-//   const newDiscount = newPrice > 100 ? "10%" : "7%";
-
-//   return {
-//     ...item,
-//     price: newPrice,
-//     discount: newDiscount,
-//   };
+// if (price > 100) {
+//   item.price *= 1 - 0.1;
+// } else {
+//   item.price *= 1 - 0.07;
 // }
 
-// const updatedItem = updateItem(item);
-// console.log(updatedItem);
+// console.log(item.price);
+// //update the obj with new property -discount 7 or 10 % and new price
+// // function updateItem(item) {
+// //   const newPrice = calculateNewPrice(item.price);
+// //   const newDiscount = newPrice > 100 ? "10%" : "7%";
 
-const getnewproduct = (product) => {
-  const { price, discount, ...rest } = product;
-  const discountamt = price > 100 ? 0.1 * price : 0.07 * price;
-  rest.price = price - discountamt;
-  rest.discount = price > 100 ? "10%" : "7%";
-  return rest;
-};
+// //   return {
+// //     ...item,
+// //     price: newPrice,
+// //     discount: newDiscount,
+// //   };
+// // }
+
+// // const updatedItem = updateItem(item);
+// // console.log(updatedItem);
+
+// const getnewproduct = (product) => {
+//   const { price, discount, ...rest } = product;
+//   const discountamt = price > 100 ? 0.1 * price : 0.07 * price;
+//   rest.price = price - discountamt;
+//   rest.discount = price > 100 ? "10%" : "7%";
+//   return rest;
+// };
 // const newprod = getnewproduct(product);
 // console.log(newprod);
 //array
+//crud
+const classes = [];
+//update
+classes[0] = "Ana";
