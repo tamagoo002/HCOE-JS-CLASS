@@ -330,35 +330,88 @@
 //CRUDE
 
 //create obbject
-const laptop = {
-  model: "Acer",
-  name: "Nitro 5", //key:value
-  isworkking: true,
-  modelYear: 2020,
-  specs: {
-    ram: 16,
-    sdd: "1TB",
-  },
-  age: () => {
-    return 2024 - laptop.modelYear;
-  },
-  fullName: () => {
-    console.log(this);
-    return this.model + laptop.name;
-  },
-}; //object  curly bracket thapesi es6
-//read
-const laptopmodel = laptop.model;
-const laptopage = laptop.age();
-const laptopnamee = laptop.fullName();
+// const laptop = {
+//   model: "Acer",
+//   name: "Nitro 5", //key:value
+//   isworkking: true,
+//   modelYear: 2020,
+//   specs: {
+//     ram: 16,
+//     sdd: "1TB",
+//   },
+//   age: () => {
+//     return 2024 - laptop.modelYear;
+//   },
+//   fullName: () => {
+//     console.log(this);
+//     return this.model + laptop.name;
+//   },
+// }; //object  curly bracket thapesi es6
+// //read
+// const laptopmodel = laptop.model;
+// const laptopage = laptop.age();
+// const laptopnamee = laptop.fullName();
 
-console.log(laptopmodel, laptopage, laptopnamee);
+// console.log(laptopmodel, laptopage, laptopnamee);
 
 //objet creation type es5?
 //updat e
-laptop.model = "Ball";
-console.log(model);
+// laptop.model = "Ball";
+// console.log(model);
 //delete use nagarni
+
 //destructure
-const { model, fullname, ...rest } = laptop;
-console.log(rest);
+// const laptop = {
+//   model: "Acer",
+//   name: "Nitro 5", //key:value
+//   modelYear: 2020,
+
+//   age: () => {
+//     return 2024 - laptop.modelYear;
+//   },
+//   fullName: () => {
+//     console.log(this);
+//     return this.model + laptop.name;
+//   },
+// };
+// //spread operator
+// const { model, fullname, ...rest } = laptop;
+// console.log(rest);
+
+const item = {
+  name: "headphones",
+  price: 77.84,
+  discount: "7%",
+};
+
+const price = item.price;
+
+if (price > 100) {
+  item.price *= 1 - 0.1;
+} else {
+  item.price *= 1 - 0.07;
+}
+
+console.log(item.price);
+//update the obj with new property -discount 7 or 10 % and new price
+// function updateItem(item) {
+//   const newPrice = calculateNewPrice(item.price);
+//   const newDiscount = newPrice > 100 ? "10%" : "7%";
+
+//   return {
+//     ...item,
+//     price: newPrice,
+//     discount: newDiscount,
+//   };
+// }
+
+// const updatedItem = updateItem(item);
+// console.log(updatedItem);
+
+const getnewproduct = (product) => {
+  const { price, discount, ...rest } = product;
+  const discountamt = price > 100 ? 0.1 * price : 0.07 * price;
+  rest.price = price - discountamt;
+  rest.discount = price > 100 ? "10%" : "7%";
+  return rest;
+};
