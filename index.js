@@ -195,21 +195,133 @@
 //wap that add number formatt
 //10000=>10,000
 
-const fname = "Anamika";
-const lname = "Rai";
+// const fname = "Anamika";
+// const lname = "Rai";
 
-const fullName =
-  fname.charAt(0).toUpperCase() +
-  fname.slice(1).toLowerCase() +
-  " " +
-  lname.charAt(0).toUpperCase() +
-  lname.slice(1).toLowerCase();
-
-console.log(fullName);
-
-// const fname = 'Anamika';
-// const lname = 'Rai';
-
-// const fullName = fname.slice(0, 1).toUpperCase() + fname.slice(1).toLowerCase() + ' ' + lname.slice(0, 1).toUpperCase() + lname.slice(1).toLowerCase();
+// const fullName =
+//   fname.charAt(0).toUpperCase() +
+//   fname.slice(1).toLowerCase() +
+//   " " +
+//   lname.charAt(0).toUpperCase() +
+//   lname.slice(1).toLowerCase();
 
 // console.log(fullName);
+
+// // const firstname = fname.slice(0,1).touppercase().concat(fname.slice(1,fname,lentgh);
+// // console.log(firsyname)))
+// // const fname = 'Anamika';
+// // const lname = 'Rai';
+
+// // const fullName = fname.slice(0, 1).toUpperCase() + fname.slice(1).toLowerCase() + ' ' + lname.slice(0, 1).toUpperCase() + lname.slice(1).toLowerCase();
+
+// // console.log(fullName);
+
+// function formatNumber(number) {
+//   let numStr = number.toString();
+
+//   let formattedStr = "";
+//   for (let i = numStr.length - 1, j = 1; i >= 0; i--, j++) {
+//     formattedStr = numStr.charAt(i) + formattedStr;
+//     if (j % 3 === 0 && i !== 0) {
+//       formattedStr = "," + formattedStr;
+//     }
+//   }
+
+//   return formattedStr;
+// }
+
+// function formatNumber(number) {
+//   return number.toLocaleString();
+// }
+// console.log(formatNumber(1234567));
+// console.log(formatNumber(9876543210));'
+//write a es6 ntion to sum 2 values a=110 and b =200
+
+// const a = 110;
+// const b = 200;
+
+// const sum = (a, b) => a + b;
+// const result = sum(a, b);
+// console.log(result);
+
+// // alert(`Sum: ${result}`);
+//funtions
+// const paging = (Number = 5) => {
+//   console.log(Number);
+// };
+// paging();
+
+// (){
+// console.log("hello");
+// }( )
+//iife
+// (() => {
+//   console.log("hello");
+// })();
+// //xtrncic
+// const sum = (a, b) => {
+//   return a + b;
+// };
+// //imp
+// const sum = (a, b) => a + b;
+
+// function reverseNumber(num) {
+//   return (
+//     parseInt(Math.abs(num).toString().split("").reverse().join("")) *
+//     Math.sign(num)
+//   );
+// }
+
+// console.log(reverseNumber(12345)); // Output: 54321
+
+// const reverseNumber = (num) => {
+//   const originalSign = Math.sign(num);
+//   const reversedNum = parseInt(
+//     Math.abs(num).toString().split("").reverse().join("")
+//   );
+
+//   return reversedNum * originalSign;
+// };
+
+// function reversenumber(n) {
+//   n = n + "";
+//   // str = num.toString();
+//   return n.split("").reverse().join("");
+// }
+
+// console.log(Number(reversenumber(12345)));
+// function reversenumber(n) {
+//   n = n.toString();
+//   return n.split("").reverse().join("");
+// }
+// console.log(Number(reversenumber(12345)));
+
+///implicit
+
+// const reversenumber = (n) => Number(n.toString().split("").reverse().join(""));
+
+// console.log(reversenumber(12345));
+
+//wap in js using fntion to convert  temp to  and from celsius farenheit
+
+// // Function to convert Celsius to Fahrenheit
+// function celsiusToFahrenheit(celsius) {
+//   var fahrenheit = (celsius * 9) / 5 + 32;
+//   return fahrenheit;
+// }
+
+// var celsiusTemp = prompt("Enter temperature in Celsius:", 0);
+// var fahrenheitTemp = celsiusToFahrenheit(parseFloat(celsiusTemp));
+
+// alert("The temperature in Fahrenheit is " + fahrenheitTemp);
+
+const tempc = (temp, degree = "c") => {
+  console.log(temp, degree);
+  if (degree === "c") {
+    return (f = (c * 9) / 5 + 32);
+  } else {
+    return ((temp - 32) * 5) / 9;
+  }
+};
+const resp = tempc(140, "f");
+console.log(resp);
