@@ -415,3 +415,6 @@ const getnewproduct = (product) => {
   rest.discount = price > 100 ? "10%" : "7%";
   return rest;
 };
+// const newprod = getnewproduct(product);
+// console.log(newprod);
+//array
