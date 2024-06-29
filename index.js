@@ -325,3 +325,30 @@
 // };
 // const resp = tempc(140, "f");
 // console.log(resp);
+
+//object
+//CRUDE
+
+//create obbject
+const laptop = {
+  model: "Acer",
+  name: "Nitro 5", //key:value
+  isworkking: true,
+  modelyear: 2020,
+  specs: {
+    ram: 16,
+    sdd: "1TB",
+  },
+  age: () => {
+    return 2024 - modelyear;
+  },
+  fullName: function () {
+    return model + name;
+  },
+}; //object  curly bracket thapesi es6
+//read
+const laptopmodel = laptop.model;
+
+console.log(laptopmodel);
+
+//objet creation type es5?
