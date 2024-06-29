@@ -422,3 +422,15 @@
 const classes = [];
 //update
 classes[0] = "Ana";
+classes[1] = "mika";
+classes[1] = "Anamika";
+
+console.log(classes);
+console.log(classes[1]);
+//delete
+// delete classes[0];
+//array method
+console.log(classes.shift());
+//method
+classes.shift();
+console.log(classes);
