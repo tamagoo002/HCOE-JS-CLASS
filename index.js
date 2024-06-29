@@ -315,13 +315,13 @@
 
 // alert("The temperature in Fahrenheit is " + fahrenheitTemp);
 
-const tempc = (temp, degree = "c") => {
-  console.log(temp, degree);
-  if (degree === "c") {
-    return (f = (c * 9) / 5 + 32);
-  } else {
-    return ((temp - 32) * 5) / 9;
-  }
-};
-const resp = tempc(140, "f");
-console.log(resp);
+// const tempc = (temp, degree = "c") => {
+//   console.log(temp, degree);
+//   if (degree === "c") {
+//     return (f = (c * 9) / 5 + 32);
+//   } else {
+//     return ((temp - 32) * 5) / 9;
+//   }
+// };
+// const resp = tempc(140, "f");
+// console.log(resp);
