@@ -527,55 +527,55 @@
 // console.log(rolematch(sysrole, userrole));
 
 ///
-const characters = [
-  {
-    name: "Luke Skywalker",
-    height: "172",
-    mass: "77",
-    eye_color: "blue",
-    gender: "male",
-  },
-  {
-    name: "Darth Vader",
-    height: "202",
-    mass: "136",
-    eye_color: "yellow",
-    gender: "male",
-  },
-  {
-    name: "Leia Organa",
-    height: "150",
-    mass: "49",
-    eye_color: "brown",
-    gender: "female",
-  },
-  {
-    name: "Anakin Skywalker",
-    height: "188",
-    mass: "84",
-    eye_color: "blue",
-    gender: "male",
-  },
-];
-const charactersByEyeColor = characters.reduce((acc, { eye_color }) => {
-  acc[eye_color] = (acc[eye_color] || 0) + 1;
-  return acc;
-}, {});
+// const characters = [
+//   {
+//     name: "Luke Skywalker",
+//     height: "172",
+//     mass: "77",
+//     eye_color: "blue",
+//     gender: "male",
+//   },
+//   {
+//     name: "Darth Vader",
+//     height: "202",
+//     mass: "136",
+//     eye_color: "yellow",
+//     gender: "male",
+//   },
+//   {
+//     name: "Leia Organa",
+//     height: "150",
+//     mass: "49",
+//     eye_color: "brown",
+//     gender: "female",
+//   },
+//   {
+//     name: "Anakin Skywalker",
+//     height: "188",
+//     mass: "84",
+//     eye_color: "blue",
+//     gender: "male",
+//   },
+// ];
+// const charactersByEyeColor = characters.reduce((acc, { eye_color }) => {
+//   acc[eye_color] = (acc[eye_color] || 0) + 1;
+//   return acc;
+// }, {});
 
-console.log("Total number of characters by eye color:", charactersByEyeColor);
-//sir ko soln
-const eyeCount = (arr)=>{
-    return arr.reduce((a,b)=>{
-      const color = b.eye_color;
-      if (a [color]){
-        a [color]++;
-  
-      }
-      else{
-        a[color]=1;
-      }
-      return a;
-    },
-    {});
-    };
-    console.log(eyeCount{characters});
+// console.log("Total number of characters by eye color:", charactersByEyeColor);
+// //sir ko soln
+// const eyeCount = (arr)=>{
+//     return arr.reduce((a,b)=>{
+//       const color = b.eye_color;
+//       if (a [color]){
+//         a [color]++;
+
+//       }
+//       else{
+//         a[color]=1;
+//       }
+//       return a;
+//     },
+//     {});
+//     };
+//     console.log(eyeCount{characters});
