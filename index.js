@@ -436,10 +436,17 @@
 // console.log(classes);
 // let food =['Noodle','Pasta','Ice-cream'];
 // let food =['Fries','Ice-cream','Pizza'];
-// use array metod  to find one common array
+// use array method  to find one common array
+
 let food1 = ["Noodle", "Pasta", "Ice-cream"];
 let food2 = ["Fries", "Ice-cream", "Pizza"];
 
 let commonFood = food1.filter((item) => food2.includes(item));
 
 console.log(commonFood);
+//sir ko soln
+const getcommon = (food1, food2) => {
+  return food1.filter((item) => food2.includes(item));
+};
+const result = getcommon(food1, food2);
+console.log(result);
