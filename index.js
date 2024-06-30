@@ -419,18 +419,27 @@
 // console.log(newprod);
 //array
 //crud
-const classes = [];
-//update
-classes[0] = "Ana";
-classes[1] = "mika";
-classes[1] = "Anamika";
+// const classes = [];
+// //update
+// classes[0] = "Ana";
+// classes[1] = "mika";
+// classes[1] = "Anamika";
 
-console.log(classes);
-console.log(classes[1]);
-//delete
-// delete classes[0];
-//array method
-console.log(classes.shift());
-//method
-classes.shift();
-console.log(classes);
+// console.log(classes);
+// console.log(classes[1]);
+// //delete
+// // delete classes[0];
+// //array method
+// console.log(classes.shift());
+// //method
+// classes.shift();
+// console.log(classes);
+// let food =['Noodle','Pasta','Ice-cream'];
+// let food =['Fries','Ice-cream','Pizza'];
+// use array metod  to find one common array
+let food1 = ["Noodle", "Pasta", "Ice-cream"];
+let food2 = ["Fries", "Ice-cream", "Pizza"];
+
+let commonFood = food1.filter((item) => food2.includes(item));
+
+console.log(commonFood);
