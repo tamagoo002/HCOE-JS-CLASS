@@ -438,15 +438,90 @@
 // let food =['Fries','Ice-cream','Pizza'];
 // use array method  to find one common array
 
-let food1 = ["Noodle", "Pasta", "Ice-cream"];
-let food2 = ["Fries", "Ice-cream", "Pizza"];
+// let food1 = ["Noodle", "Pasta", "Ice-cream"];
+// let food2 = ["Fries", "Ice-cream", "Pizza"];
 
-let commonFood = food1.filter((item) => food2.includes(item));
+// let commonFood = food1.filter((item) => food2.includes(item));
 
-console.log(commonFood);
+// console.log(commonFood);
+// //sir ko soln
+// const getcommon = (food1, food2) => {
+//   return food1.filter((item) => food2.includes(item));
+// };
+// const result = getcommon(food1, food2);
+// console.log(result);
+// //
+
+// const classes = [
+//   { name: "Ram", age: 20 },
+//   { name: "Sita", age: 25 },
+//   { name: "Hari", age: 40 },
+// ];
+// //sorting in asc order
+// classes.sort();
+// //sort by age
+// classes.sort((a, b) => a.age - b.age);
+// //sort by name
+// classes.sort((a, b) => {
+//   const nameA = a.name.toUpperCase(); // ignore upper and lowercase
+//   const nameB = b.name.toUpperCase(); // ignore upper and lowercase
+//   if (nameA < nameB) {
+//     return -1;
+//   }
+//   if (nameA > nameB) {
+//     return 1;
+//   }
+
+//   // names must be equal
+//   return 0;
+// });
+// //sir ko soln
+// const agesorter = (arr) => {
+//   return arr.sort((a, b) => a.age - b.age);
+// };
+// const res = agesorter(classes);
+// console.log(classes);
+
+// const country = ["Japan", "Nepal", "USA", "Australia"];
+
+// // Find the largest country by length
+// const comp = (arr) => {
+//   return arr.sort((a, b) => a.length - b.length);
+// };
+
+// const sorted = comp(country);
+// const largest = sorted[sorted.length - 1];
+
+// console.log(sorted); // Log the sorted array
+// console.log(largest); // Log the largest country by length
+// //sir ko solm
+// ///function open ani
+// let largest ="";
+// arr.map(country)=>{
+//     if(largest.length > country.length){
+//         return;
+//     }else{
+//         largest=country;
+//     }
+//     return largest;
+// };
+// console.log(largestcountry(countries));
+const sysrole = ["admin", "manager"];
+const userrole = ["user", "receptionist", "manager"];
+
+// Compare two roles and return boolean if role matches
+//const getcommon = (food1, food2) => {
+//   return food1.filter((item) => food2.includes(item));
+// };
+// const result = getcommon(food1, food2);
+// const rolematch = (sysrole, userrole) => {
+//   return sysrole.some((role) => userrole.includes(role));
+// };
+
+// console.log(rolematch(sysrole, userrole));
 //sir ko soln
-const getcommon = (food1, food2) => {
-  return food1.filter((item) => food2.includes(item));
-};
-const result = getcommon(food1, food2);
-console.log(result);
+
+// const rolematch = (sysrole, userrole) =>
+//   sysrole.some((role) => userrole.includes(role));
+
+// console.log(rolematch(sysrole, userrole));
