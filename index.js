@@ -563,3 +563,19 @@ const charactersByEyeColor = characters.reduce((acc, { eye_color }) => {
 }, {});
 
 console.log("Total number of characters by eye color:", charactersByEyeColor);
+//sir ko soln
+const eyeCount = (arr)=>{
+    return arr.reduce((a,b)=>{
+      const color = b.eye_color;
+      if (a [color]){
+        a [color]++;
+  
+      }
+      else{
+        a[color]=1;
+      }
+      return a;
+    },
+    {});
+    };
+    console.log(eyeCount{characters});
